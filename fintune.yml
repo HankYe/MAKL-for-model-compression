@@ -1,0 +1,11 @@
+CMD: 'python fintune_prune10.py'
+LOGROOT: ./results/logs
+FARM: bigfarm
+CODE_IGNORE_PATTERNS: '.git, *.pyc, *pkl, docs*, test*'
+
+bigfarm:
+  SUBMIT_CMD: 'submit_job'
+  RESOURCES:
+    gpu: 2
+    cpu: 4
+    mem: 128
